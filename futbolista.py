@@ -10,14 +10,12 @@ class Futbolista(Deportista):
         self._tarjetasRojas=rojas
         self._piernaHabil=pierna
         Futbolista._listaFutbolistas.append(self)
-
     @classmethod
     def getListaFutbolistas(cls):
         cls._listaFutbolistas
 
     def getGolesMarcados(self):
-        return self._golesMarcados
-    
+        return self._golesMarcados  
     def getTarjetasRojas(self):
         return self._tarjetasRojas
     
@@ -32,7 +30,6 @@ class Futbolista(Deportista):
     
     def setPiernaHabil(self,nuevo):
         self._piernaHabil=nuevo
-
     @classmethod
     def setListaFutbolistas(cls,nuevo):
         cls._listaFutbolistas=nuevo
